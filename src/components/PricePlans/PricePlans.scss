@@ -1,0 +1,21 @@
+ .price-plan:hover{
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.15);
+}
+
+.order-button:hover{
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.15);
+    background-color: rgba(255, 180, 0, 1);
+    transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+    .price-plan{
+      width: 100%;
+      height: fit-content;
+      flex-basis: calc(100% - 20px);
+    }
+  }

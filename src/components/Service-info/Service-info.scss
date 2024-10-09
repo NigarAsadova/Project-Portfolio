@@ -1,0 +1,47 @@
+
+// @media only screen and (max-width: 600px) {
+//     .gridItem{
+//       flex-basis: calc(50% - 70px);
+//       height: fit-content;
+//     }
+// }
+
+@media only screen and (max-width: 900px) {
+  .hover-item {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .hover-item {
+    flex-basis: calc(100% - 20px);
+  }
+}
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.hovered, .without-hover, .hover-item{
+  transition: all 5s ease-in-out;
+  animation: myAnim 0.2s ease-in 0s 1 normal forwards;
+}
+
+
+
+.hover-item:hover{
+  .hovered{
+    opacity: 1;
+    display: block;
+    transition: all 0.4s ease-in-out;
+  }
+  .without-hover{
+    opacity: 0;
+    display: none;
+    transition: all 0.4s ease-in-out;
+  }
+}
